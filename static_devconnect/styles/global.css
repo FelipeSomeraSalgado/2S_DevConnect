@@ -1,0 +1,74 @@
+/* 1 forma de utilizar uma fonte */
+/* @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap'); */
+
+/* 2 forma de utilizar uma fonte */
+@font-face {
+    font-family: Billabong;
+    src: url(../assets/fonts/Billabong/billabong.ttf),
+        url(../assets/fonts/Billabong/billabong_regular.otf);
+}
+
+/* variaveis */
+:root {
+    --cor-preto: #000000;
+    --cor-verde-esmeralda: #419F93;
+    --cor-branco: #ffffff;
+    --cor-cinza-escuro1: #b6b6b6;
+    --cor-cinza-escuro2: #4D4D4D;
+    --cor-cinza-escuro3: #6F6F6F;
+    --cor-azul-escuro: #2C3E50;
+    --cor-azul-claro: #B3EFFF;
+    --cor-cinza-claro: #fafafa;
+
+    --borda: 1px solid var(--cor-cinza-medio);
+    --borda-arredondada: 2px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+}
+
+/* SELETOR GLOBAL */
+*{
+    padding: 0; /*espaço interno*/
+    margin: 0; /*espaço externo*/
+    box-sizing: border-box; /*atribui espaços internos/externos e bordas no tamanho final do box*/
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background-color: var(--cor-cinza-claro);
+}
+
+h1{    
+    position: absolute; /*altera a posição do elemento*/
+    z-index: -1; /*camadas do elemento*/
+    opacity: 0; /*opacidade*/
+}
+
+/*formulario*/
+.formulario-botao-azul{
+    background-color: var(--cor-preto);
+    border-radius: var(--borda-arredondada);
+    border: none;/*tira a borda*/
+    height: 35px;
+
+    color: var(--cor-branco);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+.formulario-campos > input{
+    border: var(--borda);
+    height: 35px;
+    background-color: var(--cor-cinza-escuro3);
+
+    color: var(--cor-cinza-escuro2);
+    font-size: var(--tamanho-fonte-sm);
+    border-radius: var(--borda-arredondada);
+}
+
+.formulario-campos > label{
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro2);
+    font-weight: 600;/**/
+}
