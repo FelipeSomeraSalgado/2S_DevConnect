@@ -65,10 +65,7 @@ form >a, #secao-cadastro > p > a {
 }
 
 .estilo-formulario {
-    width: 100%;
     max-width: 342px;
-    background-color: var(--cor-branco);
-    border: var(--borda);
   
 }
 
@@ -86,16 +83,3 @@ main>div>p {
     gap: 10px;
 }
 
-#campo-upload{
-    display: none;
-}
-
-#upload{
-    display: inline-block;
-    width: 210px;
-    color: var(--cor-branco);
-    background-color: var(--cor-preto);
-    font-size: var(--tamanho-fonte-sm);
-    text-align: center;
-    
-}
