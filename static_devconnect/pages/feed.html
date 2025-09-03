@@ -36,7 +36,7 @@
                     <img src="../assets/images/icone-coracao-preto.svg" alt="">
                 </a>
                 <a href="#">
-                    <img id="foto-perfil" src="../assets/images/8054259d04f796f74724bb32103b13aa.jpg" alt="">
+                    <img class="foto-perfil" src="../assets/images/8054259d04f796f74724bb32103b13aa.jpg" alt="">
                 </a>
 
             </div>
@@ -112,11 +112,12 @@
                 </article>
             </section>
             <!--Inicio seção criar publicação-->
-            <section id="criar-publi">
-                <h2>publicação</h2>
+            <section id="criar-publi" class="estilo-formulario">
+            <!--Fim secao criar publicacao-->
+                <h2>Publicação</h2>
 
                 <form action="">
-                    <textarea name="" id=""></textarea> <!--Entrada de texto grandes-->
+                    <textarea name="" id="" placeholder="digite a descrição do post..."></textarea> <!--Entrada de texto grandes-->
                     <footer>
                         <div id="upload">
                             <label for="campo-upload" id="texto-upload">Faça upload da sua imagem aqui...</label>
@@ -126,6 +127,40 @@
                     </footer>
                 </form>
             </section>
+            <!--Fim secao criar pubblicacao-->
+
+            <section id="publicacoes">
+             <!--Card publi--> 
+             <article class="card-publi">
+                <header>
+                    <a href="#">
+                        <img class="foto-perfil" src="../assets/images/8054259d04f796f74724bb32103b13aa.jpg" alt="">
+                        cristiano_coringao
+                    </a>    
+                </header>
+
+                <figure>
+                    <img   class="imagem-publicacao"  src="../assets/images/transferir.jpg" alt="">
+                    <figcaption>
+                        cristiano_ronaldo
+                        <p class="descricao-publicacao">craque marca o seu decimo primeiro gol em apenas 4 partidas pelo corinthians</p>
+                    </figcaption>
+
+                    <div class="interacoes-publicacao">
+                        <button type="button">
+                            <img src="../assets/images/icone-coracao-preto.svg" alt="">
+                        </button>
+                        <button type="button">
+                            <img src="../assets/images/icone-comentario-preto.svg" alt="">
+                        </button>
+                        <span> 2.9M </span>
+                    </div>
+
+                    <button type="button">Ver todos os comentarios...</button>
+                </figure>
+             </article>
+        </section>
+
         </div>
 
     </main>

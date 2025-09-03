@@ -1,5 +1,5 @@
 main { 
-    /*background-color: var(--cor-branco);*/
+   /* background-color: var(--cor-preto);*/
     min-height: 100vh;
     /*minimo de altura da janela do dispositivo*/
     width: 100%;
@@ -19,7 +19,7 @@ main>div {
 }
 
 form {
-    /* background-color: brown; */
+    /*background-color: brown; */
     display: flex;/*ativa o flex*/
     flex-direction: column;
     justify-content: center;/*alinha na direcao do flex*/

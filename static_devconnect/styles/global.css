@@ -37,6 +37,7 @@
     box-sizing: border-box;
     /*atribui espaços internos/externos e bordas no tamanho final do box*/
     font-family: "Segoe UI", sans-serif;
+    outline-color: var(--cor-azul-claro);
 }
 
 body {
@@ -54,7 +55,7 @@ h1 {
 
 /*formulario*/
 .formulario-botao-azul {
-    background-color: var(--cor-preto);
+    background-color: var(--cor-verde-esmeralda);
     border-radius: var(--borda-arredondada);
     border: none;
     /*tira a borda*/
@@ -83,7 +84,7 @@ h1 {
 
 .estilo-formulario {
     width: 100%;
-    background-color: var(--cor-branco);
+    background-color: var(--cor-azul-escuro);
     border: var(--borda);
 }
 
@@ -95,11 +96,14 @@ h1 {
     display: inline-block;
     width: 210px;
     max-width: 300px;
-    padding: 10px;
+    min-height: 35px; /*para se adaptar conforme seu conteudo*/
+    padding: 5px;
     color: var(--cor-branco);
     background-color: var(--cor-preto);
     font-size: var(--tamanho-fonte-sm);
     text-align: center;
+    border-radius: var(--borda-arredondada);
+    font-weight: 500;
     
 }
 /*cabecalho */
@@ -141,7 +145,7 @@ h1 {
     align-items: center;
 }
 
-#foto-perfil {
+.foto-perfil {
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -161,4 +165,5 @@ h1 {
     display: none;
    }
 }
+
 
