@@ -20,7 +20,7 @@
     --cor-azul-claro: #B3EFFF;
     --cor-cinza-claro: #fafafa;
 
-    --borda: 1px solid var(--cor-cinza-medio);
+    --borda: 1px solid var(--cor-cinza-escuro1);
     --borda-arredondada: 2px;
 
     --tamanho-fonte-lg: 20px;
@@ -40,9 +40,12 @@
     outline-color: var(--cor-azul-claro);
 }
 
+  
+
 body {
     background-color: var(--cor-cinza-claro);
 }
+
 
 h1 {
     position: absolute;
@@ -116,7 +119,6 @@ h1 {
     border-bottom: var(--borda);
 }
 
-
 #cabecalho>nav {
     background-color: var(--cor-cinza-escuro2);
     width: 85%;
@@ -154,6 +156,7 @@ h1 {
     /*guiar a imagem*/
     border-radius: 50%;
     /*arredondar a imagem*/
+
 }
 
 /*RESPONSIVO*/
