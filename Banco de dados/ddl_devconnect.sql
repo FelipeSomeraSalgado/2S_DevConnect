@@ -1,7 +1,7 @@
 --DDL
 CREATE DATABASE db_devconnect;
 
-USE db_devconnect
+USE db_devconnect;
 
 GO
 
