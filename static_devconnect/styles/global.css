@@ -1,172 +1,126 @@
-/* 1 forma de utilizar uma fonte */
-/* @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap'); */
-
-/* 2 forma de utilizar uma fonte */
+/* FONTES */
 @font-face {
     font-family: Billabong;
     src: url(../assets/fonts/Billabong/billabong.ttf),
-        url(../assets/fonts/Billabong/billabong_regular.otf);
+         url(../assets/fonts/Billabong/billabong_regular.otf);
 }
 
-/* variaveis */
+/* VARIÁVEIS */
 :root {
     --cor-preto: #000000;
     --cor-verde-esmeralda: #419F93;
     --cor-branco: #ffffff;
-    --cor-cinza-escuro1: #9B9B9B;
-    --cor-cinza-escuro2: #474747;
-    --cor-cinza-escuro3: #6F6F6F;
+
+    --cor-branco-gelo: #E3F5FC;
+    --cor-cinza-claro: #F2F7FA;
+    --cor-cinza-escuro: #474747;
     --cor-azul-escuro: #2C3E50;
     --cor-azul-claro: #B3EFFF;
-    --cor-cinza-claro: #fafafa;
-
-    --borda: 1px solid var(--cor-cinza-escuro1);
-    --borda-arredondada: 2px;
 
     --tamanho-fonte-lg: 20px;
     --tamanho-fonte-md: 16px;
     --tamanho-fonte-sm: 14px;
 }
 
-/* SELETOR GLOBAL */
 * {
-    padding: 0;
-    /*espaço interno*/
     margin: 0;
-    /*espaço externo*/
+    padding: 0;
     box-sizing: border-box;
-    /*atribui espaços internos/externos e bordas no tamanho final do box*/
     font-family: "Segoe UI", sans-serif;
     outline-color: var(--cor-azul-claro);
 }
-
-  
 
 body {
     background-color: var(--cor-cinza-claro);
 }
 
-
+/* REMOVE TÍTULO INVISÍVEL */
 h1 {
-    position: absolute;
-    /*altera a posição do elemento*/
-    z-index: -1;
-    /*camadas do elemento*/
-    opacity: 0;
-    /*opacidade*/
+    display: none;
 }
 
-/*formulario*/
+/* BOTÕES PADRÃO */
 .formulario-botao-azul {
     background-color: var(--cor-verde-esmeralda);
-    border-radius: var(--borda-arredondada);
+    border-radius: 2px;
     border: none;
-    /*tira a borda*/
     height: 35px;
 
     color: var(--cor-branco);
     font-size: var(--tamanho-fonte-sm);
 }
 
-.formulario-campos>input {
-    border: var(--borda);
+/* INPUTS PADRÃO (mas sobrescrito no cadastro.css) */
+.formulario-campos > input {
     height: 35px;
-    background-color: var(--cor-cinza-escuro3);
-
-    color: var(--cor-cinza-escuro2);
     font-size: var(--tamanho-fonte-sm);
-    border-radius: var(--borda-arredondada);
+    border-radius: 2px;
+    border: none;
 }
 
-.formulario-campos>label {
+/* LABELS */
+.formulario-campos > label {
     font-size: var(--tamanho-fonte-sm);
-    color: var(--cor-cinza-escuro2);
+    color: var(--cor-preto);
     font-weight: 600;
-    /**/
 }
 
+/* FORM CONTAINER PADRÃO */
 .estilo-formulario {
     width: 100%;
-    background-color: var(--cor-azul-escuro);
-    border: var(--borda);
 }
 
-#campo-upload{
+/* UPLOAD */
+#campo-upload {
     display: none;
 }
 
-#upload{
+#upload {
     display: inline-block;
-    width: 210px;
-    max-width: 300px;
-    min-height: 35px; /*para se adaptar conforme seu conteudo*/
-    padding: 5px;
+    padding: 10px;
     color: var(--cor-branco);
     background-color: var(--cor-preto);
     font-size: var(--tamanho-fonte-sm);
-    text-align: center;
-    border-radius: var(--borda-arredondada);
-    font-weight: 500;
-    
+    border-radius: 2px;
+    cursor: pointer;
 }
-/*cabecalho */
+
+/* CABEÇALHO (para outras páginas) */
 #cabecalho {
-    background-color: var(--cor-cinza-escuro2);
+    background-color: #1D1D1D;
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: center; /*Alinha os filhos na direção do flex*/
-    border-bottom: var(--borda);
+    justify-content: center;
+    border-bottom: 1px solid #1D1D1D;
 }
 
-#cabecalho>nav {
-    background-color: var(--cor-cinza-escuro2);
+#cabecalho nav {
     width: 85%;
     max-width: 900px;
-    height: 100%;
     display: flex;
-    align-items: center;
-    /*Alinha os filhos na direção contraria flex*/
     justify-content: space-between;
-}
-
-#logo-mobile{
-    display: none;
+    align-items: center;
 }
 
 .cabecalho-acoes {
-    background-color: var(--cor-cinza-escuro2);
     display: flex;
     align-items: center;
-    /*justify-content: space-between;*/
-    gap: 15px;
+    gap: 10px; 
 }
 
-.cabecalho-acoes>a {
-    display: flex;
-    align-items: center;
-}
+
+#logo-mobile { display: none; }
 
 .foto-perfil {
     width: 40px;
     height: 40px;
     object-fit: cover;
-    /*mantem a proporcao com um zoom para adaptar ao tamanho da imagem*/
-    object-position: center;
-    /*guiar a imagem*/
     border-radius: 50%;
-    /*arredondar a imagem*/
-
 }
 
-/*RESPONSIVO*/
-@media only screen and (max-width: 500px){
-#logo-mobile {
-    display: initial;
-   }
-   #logo-desktop{
-    display: none;
-   }
+/* RESPONSIVO */
+@media only screen and (max-width: 500px) {
+    #logo-mobile { display: initial; }
+    #logo-desktop { display: none; }
 }
-
-

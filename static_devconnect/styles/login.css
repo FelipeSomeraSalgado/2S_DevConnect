@@ -1,5 +1,5 @@
 main { 
-   /* background-color: var(--cor-preto);*/
+    background-color: var(--cor-preto);
     min-height: 100vh;
     /*minimo de altura da janela do dispositivo*/
     width: 100%;
@@ -28,15 +28,22 @@ form {
     padding: 3%;
 }
 
-.formulario-campos{
+
+.formulario-campos > input{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 260PX;
     gap: 5px;
+    background-color:  #747474;
 }
 
+.formulario-campos input::placeholder{
+    color: var(--cor-azul-claro);
+}
 .formulario-botao-azul{
-    width: 100%;
+    width: 260px;
+    background-color: var(--cor-preto);
+    color: #9B9B9B;
 }
 
 form > p{
@@ -46,7 +53,7 @@ form > p{
 }
 
 form >a, #secao-cadastro > p > a {
-    color: var(--cor-azul);
+    color: var(--cor-verde-esmeralda);
     font-size: var(--tamanho-fonte-sm);
     text-decoration: none;/*remove a decoração (sublinhado)*/
 }
@@ -58,7 +65,7 @@ form >a, #secao-cadastro > p > a {
 
 #secao-cadastro {
     /* background-color: burlywood; */
-    height: 60%;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +73,9 @@ form >a, #secao-cadastro > p > a {
 
 .estilo-formulario {
     max-width: 342px;
+    background-color: var(--cor-cinza-escuro);
+    border: none;
+    border-radius: 10px;
 }
 
 main>div>p {

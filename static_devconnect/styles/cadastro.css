@@ -1,16 +1,14 @@
+/* FUNDO */
 main { 
     background-color: var(--cor-preto);
     min-height: 100vh;
-    /*minimo de altura da janela do dispositivo*/
-    width: 100%;
     display: flex;
-    /*ativa o flex*/
     justify-content: center;
     align-items: center;
 }
 
-main>div {
-    /*background-color: var(--cor-azul-claro);*/
+/* CONTAINER GERAL */
+main > div {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -18,68 +16,98 @@ main>div {
     gap: 25px;
 }
 
-form {
-    /*background-color: rgb(255, 0, 0);*/ 
-    display: flex;/*ativa o flex*/
-    flex-direction: column;
-    justify-content: center;/*alinha na direcao do flex*/
-    align-items: center;
-    gap: 25px;
-    padding: 3%;
+/* CARD PRINCIPAL */
+.estilo-formulario {
+    background-color: var(--cor-cinza-escuro);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    width: 350px;
+    border: none;
 }
 
-.formulario-campos{
+.estilo-formulario input::placeholder {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-branco-gelo);
+}
+
+/* FORM */
+form {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    gap: 5px;
+    gap: 25px;
+    align-items: center;
 }
 
-.formulario-botao-azul{
-    width: 100%;
-}
-
-form > p{
-    /*text-transform: uppercase;/*deixa o texto em maiusculo*/
+/* INPUTS */
+.estilo-formulario input {
+    background-color: #747474;
+    border: none;
+    padding: 12px;
+    width: 270px;
+    border-radius: 4px;
+    color: white;
     font-size: var(--tamanho-fonte-sm);
-    color: var(--cor-cinza-escuro3);
 }
 
-form >a, #secao-cadastro > p > a {
-    color: var(--cor-azul);
-    font-size: var(--tamanho-fonte-sm);
-    text-decoration: none;/*remove a decoração (sublinhado)*/
-}
-
-#secao-cadastro > p {
+/* TEXTOS */
+form > p {
     color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+/* BOTÃO PRETO */
+.formulario-botao-azul {
+    width: 100%;
+    background-color: #000;
+    color: #9B9B9B;
+    height: 40px;
+    border-radius: 4px;
+    font-size: var(--tamanho-fonte-sm);
+}
+
+/* UPLOAD */
+#upload label {
+    background-color: #000;
+    color: #9B9B9B;
+    padding: 7px;
+    border-radius: 4px;
+    width: 210px;
+    display: block;
+    cursor: pointer;
+}
+#upload input { display: none; }
+
+/* BLOCO "TEM CONTA?" */
+#secao-cadastro {
+    background-color: var(--cor-cinza-escuro);
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#secao-cadastro p {
+    color: #000;
     font-size: var(--tamanho-fonte-md);
 }
 
-#secao-cadastro {
-    /* background-color: burlywood; */
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#secao-cadastro p a {
+    color: var(--cor-verde-esmeralda);
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.estilo-formulario {
-    max-width: 342px;
-  
-}
-
-main>div>p {
-    color: var(--cor-branco);
+/* TEXTO "OBTENHA O APLICATIVO" */
+main > div > p {
+    color: white;
     font-size: var(--tamanho-fonte-sm);
 }
 
+/* ÍCONES */
 #secao-instalacao {
-   /*background-color: chartreuse;*/
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
